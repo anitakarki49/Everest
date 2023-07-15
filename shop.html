@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+
+
+    <title>Shop</title>
+   
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</head>
+
+<style>
+    .container7{
+      max-width: 1120px;
+    
+      width: 100%;
+      padding: 14rem 0;
+    }
+    .slide-container{
+      margin:  0 30px;
+      overflow: hidden;
+    }
+    .card{
+      width: 50%;
+      background: #fff;
+      border-radius: 8px;
+    }
+  
+    .card .image-box{
+      height: 200px;
+    }
+    .card .image-box img{
+      width: 100%;
+      height: 100%;
+      border-radius: 8px 8px 0 0;
+    }
+    .card .profile-details{
+      display: flex;
+      align-items: center;
+      column-gap:12px ;
+      padding: 15px;
+    }
+    .card .profile-details img{
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+    }
+    .profile-details .name{
+      font-size: 15px;
+      font-weight:500 ;
+    }
+    .profile-details .prod{
+      font-size: 15px;
+      font-weight: 500;
+      color: #4d4d4d;
+    }
+  
+    .swiper-navBtn{
+      color: #000;
+      height: 40px;
+      width: 40px;
+      background: #fff;
+      border-radius: 50%;
+    }
+    .swiper-navBtn::before,
+    .swiper-navBtn::after{
+      font-size: 18px;
+    }
+    .swiper-pagination-bullet{
+      background-color: #000;
+    }
+  
+    /* @media and {max-width: 768px}{
+      .swiper-navBtn{
+        display: none;
+      }
+    } */
+  </style>
+<body>
+
+    <header class="header">
+
+        <img src="../static/images/logo1.png" alt="logo" class="logo">
+        <!-- <a href="#" target="_blank" class="logo">Karki</a> -->
+    
+        <nav class="navbar">
+            <div class="navbar">
+                <ul class="navbar-list ">
+                    <li><a href="/" data-tab-target="#first" class="navbar-link">Home</a></li>
+                    <li><a href="shop.html" id="myBtn" class="navbar-link">Shop</a></li>
+                    <li><a href="about.html" class="navbar-link">About </a></li>
+                    <li><a href="review.html" class="navbar-link">Reviews</a></li>
+                </ul>
+            </div>
+        </nav>
+    
+        <!-- <li><a href="#/index.html" class="btn navbar-btn">Buy Silajit</a> </li> -->
+        <div class="insert" id="cart-icon">
+            <i class='bx bx-shopping-bag add-to-cart' style="grid-column: 1;grid-row: 1;" onclick="onClickIcon()"></i>
+            <div class="counter" style="grid-column: 1;grid-row: 1;">
+                <!-- <span class='badge badge-warning' id='lblCartCount'> 5 </span> -->
+    
+            </div>
+        </div>
+        <!-- cart -->
+        <div class="cart">
+            <h2 class="cart-title">Your Cart</h2>
+            <div class="cart-content">
+                <!-- <div class="cart-box ">
+                    <img src="./images/1img/authentic-shilajit.png" alt="" class="cart-img">
+                    <div class="detail-box">
+                        <div class="card-product-title">Silajit</div>
+                        <div class="cart-price">$24</div>
+                        <input type="number" value="1" class="cart-quantity">
+                    </div>
+    
+                    <i class='bx bxs-trash-alt cart-remove'></i>
+                </div> -->
+            </div>
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">$0</div>
+            </div>
+            <button type="buton" id="myBtnxey" class="btn-buy">Buy Now</button>
+            <i class='bx bx-x ' id="close-cart"></i>
+        </div>
+    
+    
+        <!-- navabr-btn -->
+    
+        <div class="mobile-navbar-btn" onclick="onClickMenu()">
+            <ion-icon name="menu" class="mobile-nav-icon"></ion-icon>
+            <ion-icon name="close" class="mobile-nav-icon"></ion-icon>
+        </div>
+    </header>
+
+    <div class="container7 swiper">
+        <div class="slide-container">
+          <div class="card-wrapper swiper-wrapper">
+            <div class="card swiper-slide">
+              <div class="image-box">
+                <img src="../static/images/12.jpg" alt="img">
+              </div>
+              <div class="profile-details">
+                <div class="name-prod">
+                  <!-- <img src="" alt="/"> -->
+                  <h3 class="name">sila</h3>
+                  <h4 class="prod">aa</h4>
+                </div>
+              </div>
+            </div>
+    
+            <div class="card swiper-slide">
+              <div class="image-box">
+                <img src="../static/images/liquid.jpg" alt="img">
+              </div>
+              <div class="profile-details">
+                <div class="name-prod">
+                  <h3 class="name">sila</h3>
+                  <h4 class="prod">aa</h4>
+                </div>
+              </div>
+            </div>
+    
+            <div class="card swiper-slide">
+              <div class="image-box">
+                <img src="../static/images/1img/authentic-shilajit.png" alt="img">
+               
+              </div>
+              <div class="profile-details">
+                <div class="name-prod">
+                  <h3 class="name">sila</h3>
+                  <h4 class="prod">aa</h4>
+                </div>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-box">
+                <img src="../static/images/1img/general-product-tablets.png" alt="img">
+               
+              </div>
+              <div class="profile-details">
+                <div class="name-prod">
+                  <h3 class="name">sila</h3>
+                  <h4 class="prod">aa</h4>
+                </div>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-box">
+                <img src="../static/images/2img/extra-strength.jpg" alt="img">
+               
+              </div>
+              <div class="profile-details">
+                <div class="name-prod">
+                  <h3 class="name">sila</h3>
+                  <h4 class="prod">aa</h4>
+                </div>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-box">
+                <img src="../static/images/1img/product-general.png" alt="img">
+               
+              </div>
+              <div class="profile-details">
+                <div class="name-prod">
+                  <h3 class="name">sila</h3>
+                  <h4 class="prod">aa</h4>
+                </div>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-box">
+                <img src="../static/images/12.jpg" alt="img">
+               
+              </div>
+              <div class="profile-details">
+                <div class="name-prod">
+                  <h3 class="name">sila</h3>
+                  <h4 class="prod">aa</h4>
+                </div>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-box">
+                <img src="../static/images/2img/dry-drops.jpg" alt="img">
+
+               
+              </div>
+              <div class="profile-details">
+                <div class="name-prod">
+                  <h3 class="name">sila</h3>
+                  <h4 class="prod">aa</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+ 
+
+    <footer class="footer-distributed" style="margin-top: 1rem;">
+
+        <div class="footer-left">
+            <h5 style="font-size: 1.75em; padding-bottom: 3%;"> Information</h5>
+            <p class="footer-Links">061-520527</p>
+
+            <p class="footer-Links"></p>
+            <p class="footer-Links">Bagmati province</p>
+            <!-- <p class="footer-Links">ss </p> -->
+            <p class="icon_wrap"></p>
+        </div>
+
+
+
+        <div class="footer-center">
+            <p>Find Us on Facebook </p>
+        </div>
+
+        <div class="footer-right">
+            <p class="footer-about">
+                <span>Buy Silajit</span>
+            </p>
+            <div class="footer-icons">
+                <a href="https://www.facebook.com/karki.1111111111/">
+                    <i class='bx bxl-facebook-circle'></i>
+                </a>
+                <a href="https://www.instagram.com/_anita_karki/">
+                    <i class='bx bxl-instagram-alt' ></i>
+                </a>
+               
+                <a href="#">
+                    <i class='bx bxl-tiktok'></i>
+                </a>
+                <a href="#">
+                    <i class='bx bxl-youtube'></i>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 m12 l12">
+                        <p>© Copyright 2023. All Rights Reserved. Designed by <a
+                                href="https://www.linkedin.com/in/anita-karki-3a49b4249/"  style="color: #1F7C6A;">Everst And Himalayan Silajit</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <script src="./js/indexs.js"></script>
+    <script src="./js/mains.js"></script>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script>
+    $(document).ready(function () {
+ const swiper = new Swiper('.slide-container', {
+  slidesPerView:4,
+  spaceBetween:20,
+  slidePerGroup:4,
+  // direction: 'vertical',
+  loop: true,
+
+  autoplay: {
+     delay: 2000, 
+     disableOnInteraction: false 
+},
+  effect: "coverflow",
+  centeredSlides:"true",
+  grabCursor: "true",
+  fadeEffect: {
+    crossFade: true
+    },  
+  coverflowEffect: {
+    rotate:0,
+    stretch: 0,
+    depth: 300,
+    modifier: 1,
+    slideshadows: false,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    520: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView:3,
+    },
+    1000: {
+      slidesPerView: 4,
+    },
+  },
+});
+});
+</script>
+
+</html>
+</html>

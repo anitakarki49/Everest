@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/shop.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <title>Everest Silajit</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <header class="header">
+
+        <img src="../static/images/logo1.png" alt="logo" class="logo">
+        <!-- <a href="#" target="_blank" class="logo">Karki</a> -->
+
+        <nav class="navbar">
+            <div class="navbar">
+                <ul class="navbar-list ">
+                    <li><a href="/"  class="navbar-link">Home</a></li>
+                    <li><a href="shop.html" id="myBtn" class="navbar-link">Shop</a></li>
+                    <li><a href="about.html" class="navbar-link">About </a></li>
+                    <li><a href="review.html" class="navbar-link">Reviews</a></li>
+                   
+                   
+
+                </ul>
+            </div>
+        </nav>
+
+        <!-- <li><a href="#/index.html" class="btn navbar-btn">Buy Silajit</a> </li> -->
+        <div class="insert" id="cart-icon">
+            <i class='bx bx-shopping-bag add-to-cart' style="grid-column: 1;grid-row: 1;" onclick="onClickIcon()"></i>
+            <div class="counter" style="grid-column: 1;grid-row: 1;">
+                <!-- <span class='badge badge-warning' id='lblCartCount'> 5 </span> -->
+
+            </div>
+        </div>
+        <!-- cart -->
+        <div class="cart">
+            <h2 class="cart-title">Your Cart</h2>
+            <div class="cart-content">
+                <!-- <div class="cart-box ">
+                    <img src="../static/images/1img/authentic-shilajit.png" alt="" class="cart-img">
+                    <div class="detail-box">
+                        <div class="card-product-title">Silajit</div>
+                        <div class="cart-price">$24</div>
+                        <input type="number" value="1" class="cart-quantity">
+                    </div>
+
+                    <i class='bx bxs-trash-alt cart-remove'></i>
+                </div> -->
+            </div>
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">$0</div>
+            </div>
+            <button type="buton" id="myBtnxey" class="btn-buy">Buy Now</button>
+            <i class='bx bx-x ' id="close-cart"></i>
+        </div>
+
+
+        <!-- navabr-btn -->
+
+        <div class="mobile-navbar-btn" onclick="onClickMenu()">
+            <ion-icon name="menu" class="mobile-nav-icon"></ion-icon>
+            <ion-icon name="close" class="mobile-nav-icon"></ion-icon>
+        </div>
+    </header>
+    <div id="myModalxey" class="modalxey">
+
+        <!-- Modal content -->
+        <div class="modalxey-content">
+            <span class="closexey">&times;</span>
+            <p style="font-size: 24px;">Place your order</p>
+            <form id="form">
+                <!-- <form action="/add_to_cart" method="post"> -->
+                <input type="text" id="fname"  name="name" placeholder="Enter your Fullname" required>
+                <input type="text" id="phone" name="contact" placeholder="Enter your Phonenumber" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+    </div>
+
+
+ 
+
+    <!-- first slide -->
+    <div class="first-slide" id="first">
+        <main>
+            <section class=" section section-hero section-part1">
+                <div class="container grid grid-two-column" style="padding-top: 8%;" id="first">
+                    <div class="hero-data">
+                        <h1 class="primary-heading anim">BUY PURE HIMALAYAN & EVEREST SHILAJIT</h1>
+                        <p class="para anim">
+                            Choose from an exclusive selection of Authentic Shilajit products Collected at High
+                            Altitudes.
+                            Our Shilajit is safe to use, free from pollutants, harvested in pristine mountain ecosystems
+                            and
+                            third-party laboratory certified.
+                        </p>
+                        <a href="#shop-product" class="btn anim">Buy shilajit</a>
+                    </div>
+                    <div class="hero-img">
+                        <img src="../static/images/1img/product-general.png " alt="product-img" class="image anim">
+                    </div>
+                </div>
+            </section>
+        </main>
+       
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#E2E2E2" fill-opacity="1"
+                d="M0,128L40,149.3C80,171,160,213,240,192C320,171,400,85,480,69.3C560,53,640,107,720,144C800,181,880,203,960,181.3C1040,160,1120,96,1200,96C1280,96,1360,160,1400,192L1440,224L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z">
+            </path>
+        </svg>
+    </div>
+
+    <!-- third-slide -->
+    <div class="third-slide" id="third-slide">
+        <div class="silajit-data">
+            <h2 class="general-product ">Pure Shilajit for Your Diet</h2>
+
+        </div>
+
+        <main>
+            <section class="section section-hero">
+                <div class="container grid grid-two-column">
+
+                    <div class="silajit-par para">
+                        <ul>
+                            <li class="arrow"><img src="../static/images/list-marker.svg" alt="marker" class="marker">
+                                Natural
+                                Source of Fulvic Acid</li>
+                            <li class="arrow"><img src="../static/images/list-marker.svg" alt="marker"
+                                    class="marker">Trace
+                                Minerals</li>
+                            <li class="arrow"><img src="../static/images/list-marker.svg" alt="marker"
+                                    class="marker">Balance Body
+                                Function</li>
+                            <li class="arrow"><img src="../static/images/list-marker.svg" alt="marker"
+                                    class="marker">Strength and
+                                Energy</li>
+                            <li class="arrow"><img src="../static/images/list-marker.svg" alt="marker"
+                                    class="marker">Thousand
+                                Years of Usage History</li>
+                        </ul>
+                    </div>
+                    <div class="silajit-img">
+                        <img src="../static/images/1/new.jpeg" alt="image" class="silajit-image">
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+    </div>
+
+    <!-- shop -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#CCE7F0" fill-opacity="1"
+            d="M0,32L40,42.7C80,53,160,75,240,122.7C320,171,400,245,480,240C560,235,640,149,720,117.3C800,85,880,107,960,138.7C1040,171,1120,213,1200,213.3C1280,213,1360,171,1400,149.3L1440,128L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
+        </path>
+    </svg>
+  
+    <section class="shop1" id="shop-product">
+
+        <div class="shop-product">
+            <h2 class="section-title">Shop Products</h2>
+
+
+
+            <div class="shop-content">
+
+                <!-- {% for i in products %}
+                <div class=" product-box ">
+                    <img src="../static/images/{{i.image}}" style="height:15rem;width:20rem" class="product-img"
+                        alt="product-img">
+                    <h2 class="product-title" name="title">{{i.product_name}}</h2>
+                    <span class="product-price" name="content">{{i.price}}</span>
+                    <i class="bx bx-shopping-bag add-cart"></i>
+                </div>
+                {% endfor %} -->
+                <!-- </div> -->
+                <!-- box 2 -->
+                <div class="product-box">
+                    <img src="../static/images/1img/general-product-tablets.png" style="height:15rem;width:20rem"  class ="product-img" alt="product-img">
+                    <h2 class="product-title" name = "title">Herbal tea</h2>
+                    <span class="product-price" name = "content">$15</span>
+                    <i class="bx bx-shopping-bag add-cart"></i>
+                </div>
+                <!-- box 3 -->
+                <div class="product-box">
+                    <img src="../static/images/1/new.jpeg" class ="product-img" style="height:15rem;width:20rem"  alt="product-img">
+                    <h2 class="product-title" name = "title">Chayawanprash</h2>
+                    <span class="product-price" name = "content">$10</span>
+                    <i class="bx bx-shopping-bag add-cart"></i>
+                </div>
+                <!-- box 4 -->
+                <div class="product-box">
+                    <img src="./static/images/1/madhoney.jpeg"  class ="product-img" style="height:15rem;width:20rem"  alt="product-img">
+                    <h2 class="product-title" name = "title">Shila</h2>
+                    <span class="product-price" name = "content">$10</span>
+                    <i class="bx bx-shopping-bag add-cart"></i>
+                </div>
+                <!-- box 5  -->
+                <div class="product-box">
+                    <img src="./static/images/liquid.jpg" class ="product-img" style="height:15rem;width:20rem"  alt="product-img">
+                    <h2 class="product-title">Shilajit</h2>
+                    <span class="product-price">$200</span>
+                    <i class="bx bx-shopping-bag add-cart"></i>
+                </div>
+                <!-- box 6  -->
+                <!-- <div class="product-box">
+                    <img src="./static/images/1img/authentic-shilajit.png"  alt="product-img">
+                    <h2 class="product-title">Shilajit</h2>
+                    <span class="product-price">$200</span>
+                    <i class="bx bx-shopping-bag add-cart"></i>
+                </div> -->
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <div class="fifth-slide">
+        <section class=" section section-hero " style="padding-top: 7rem;">
+            <div class="container grid grid-two-column">
+                <div class="hero-img">
+                    <img src="../static/images/shilajit-composition.jpg" alt="product-img" class="product-image">
+                </div>
+                <div class="hero-data">
+                    <h1 class="primary-heading"> What is Pure Shilajit and How is it Made?</h1>
+                    <p class="para">
+                        Shilajit is a substance that forms between layers of rock in high altitude areas of the
+                        Himalayas and Everest Region over a long period of time by the degradation of plant humus. It
+                        contains a variety of complex organic compounds such as fulvic and humic acids, plant alkaloids,
+                        and trace minerals. During the summer, the dark liquid oozes from the rocks and is harvested,
+                        but it may contain impurities like stones and sand. To remove these impurities, the raw shilajit
+                        is mixed with spring water and then dried to become a pure shilajit extract.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+        <div class="spreader_wave mt-4 mt-md-5"></div>
+    </div>
+
+ 
+
+
+    <!-- seventh-slide  -->
+    <div class="next-page organic-page">
+        <div class="container">
+            <div class="package para">
+                <h1 class="heading-fourth">The Effect on Body Metabolism, Inner Wellness.</h3>
+                    <p class="para res">
+                        Shilajit is rich in minerals, amino acids, fatty acids, and other organic compounds that are
+                        essential to metabolism. The body’s metabolic processes are all interconnected, involving,
+                        amongst others, the immune system and the nervous system, which influences energy levels, mood,
+                        brain function, male and female wellness to some degree. In essence, shilajit supports the
+                        balanced function of all body systems, boosting or calming the body’s inner energy as needed.
+                    </p>
+            </div>
+            <div class="package-img pack1">
+
+                <!-- <img src="../static/images/backgroundpage/organic-complex__img_desk.png" alt="product-img" class="image"> -->
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- Eighth-page -->
+    <div class="general-benefit ">
+        <main>
+            <section class=" section section-hero ">
+                <h1 class="primary-heading benefit-page">
+                    Benefits from taking Shilajit
+                </h1>
+
+                <div class="container grid grid-two-column">
+                    <div class="hero-data">
+                        <ul class="list-counter-new">
+                            <li class="para ">
+                                
+                                <span id="para1">1.</span> Support for those who have a mentally active or stressful job
+                            </li>
+                            <li class="para ">
+                                <span id="para1">2.</span> Metabolic support with natural fulvic acid
+                            </li>
+                            <li class="para ">
+                                <span id="para1">3.</span> Normalization of digestive functions
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="hero-img">
+                        <ul class="list-counter item-new">
+                            <li class="para para2">
+                               <span id="para1">4.</span> Additional nutrition for bone and joint wellness
+                            </li>
+                            <li class="para para4">
+                                <span id="para1">5.</span> Energy, endurance, and improved stamina
+                            </li>
+                            <li class="para para6">
+                                <span id="para1">6.</span> Rejuvenation and vitality
+                            </li>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#FAF0E8" fill-opacity="1"
+            d="M0,128L40,149.3C80,171,160,213,240,192C320,171,400,85,480,69.3C560,53,640,107,720,144C800,181,880,203,960,181.3C1040,160,1120,96,1200,96C1280,96,1360,160,1400,192L1440,224L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z">
+        </path>
+    </svg>
+
+    <!-- Creating Contact Form-->
+    <section class="contact-form">
+
+
+        <div class="container1" style="justify-content: center; grid-column: 1;grid-row: 1;">
+
+            <form action="https://formspree.io/f/xeqwjbrz" method="post" >
+                <h1 class="heading-fourth contact" style="font-weight: bold;font-size:3rem; font-family:monospace;">CONTACT US</h1>
+                <div class="form-group">
+                    <label for="Name">Name</label>
+                    <input type="text" id="firstname" name="firstname">
+                </div>
+                <div class="form-group">
+                    <label for="Name">Email</label>
+                    <input type="text" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="Name">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10" style="height: 10rem;"></textarea>
+                </div>
+
+                <button type="submit" >Submit</button>
+            </form>
+        </div>
+        <!-- </div> -->
+
+
+        <!-- <div style="grid-column: 1;grid-row: 1;"> -->
+        <div class="contact-img" style="grid-column: 1;grid-row: 1;">
+            <div class="box">
+                <div class="one"></div>
+                <div class="two"></div>
+              </div>
+            <!-- <img src="../static/images/fly.gif"  style="width: 100%;"> -->
+            <!-- <video autoplay loop muted plays-inline class="back-video" style="width:100%;">
+                <source src="/static/images/sas.mp4" type="video/mp4">
+            </video> -->
+        </div>
+      
+    </section>
+    <!-- End of Contact Form -->
+
+    <!-- footer -->
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#D9D0D1" fill-opacity="1" d="M0,128L40,149.3C80,171,160,213,240,192C320,171,400,85,480,69.3C560,53,640,107,720,144C800,181,880,203,960,181.3C1040,160,1120,96,1200,96C1280,96,1360,160,1400,192L1440,224L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path>
+    </svg> -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#D9D0D1" fill-opacity="1"
+            d="M0,32L40,74.7C80,117,160,203,240,229.3C320,256,400,224,480,229.3C560,235,640,277,720,245.3C800,213,880,107,960,106.7C1040,107,1120,213,1200,218.7C1280,224,1360,128,1400,80L1440,32L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
+        </path>
+    </svg>
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+            <h5 style="font-size: 1.75em; padding-bottom: 3%;"> Information</h5>
+            <p class="footer-Links">061-520527</p>
+
+            <p class="footer-Links"></p>
+            <p class="footer-Links">Bagmati province</p>
+            <!-- <p class="footer-Links">ss </p> -->
+            <p class="icon_wrap"></p>
+        </div>
+
+
+
+        <div class="footer-center">
+            <p>Find Us on Facebook </p>
+        </div>
+
+        <div class="footer-right">
+            <p class="footer-about">
+                <span>Buy Silajit</span>
+            </p>
+            <div class="footer-icons">
+                <a href="#">
+                    <i class='bx bxl-facebook-circle'></i>
+                </a>
+                <a href="#">
+                    <i class='bx bxl-instagram-alt' ></i>
+                </a>
+               
+                <a href="#">
+                    <i class='bx bxl-tiktok'></i>
+                </a>
+                <a href="#">
+                    <i class='bx bxl-youtube'></i>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 m12 l12">
+                        <p>© Copyright 2023. All Rights Reserved. Designed by <a href="https://www.linkedin.com/in/Anita Karki" style="color: #1F7C6A;">Everst And Himalayan Silajit</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+    <!-- <script>
+        function send_cart() {
+            name = $('#fname').val() //value I want to send 
+            phone = $('#phone').val() //value I want to send 
+            var datass ={
+                "name":"name",
+                "contact":"phone",
+            };
+            $.ajax({
+                url: '/add_to_cart',
+                type: 'POST',
+                data: JSON.stringify(data),
+                success: function (response) {
+                    $('#main').text(response)
+                }
+            })
+        }
+    </script> -->
+
+ 
+<script type="text/javascript">
+    $(document).ready(function() {
+        let cartItems = JSON.parse(sessionStorage.getItem('cartItems')) || [];
+
+
+      $('#form').on('submit',function(e){
+        $.ajax({
+          data : {
+            firstname : $('#fname').val(),
+            contact : $('#phone').val(),
+            cart_data: JSON.stringify(cartItems),
+          },
+          type : 'POST',
+          url : '/add_to_cart'
+        })
+
+        .done(function(data){
+            sessionStorage.removeItem('cartItems'); 
+            window.location.reload();
+
+            alert("Your order has been placed. Confirmation call will appear soon.");
+            // $('#output').text(data.output).show();
+        });
+        e.preventDefault();
+      });
+    });
+</script>
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script language="JavaScript"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="../static/js/index.js"></script>
+    <script src="../static/js/mains.js"></script>
+</body>
+
+</html>
